@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Device from './Component/Device/Device'
+import Watch from './Component/Watch'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,6 +12,8 @@ function App() {
   return (
     <div className="App">
      <Device name="iPhone" price="20000"></Device>
+     <Device name="Samsung" price="40000"></Device>
+     <Watch></Watch>
       <h1>Vite + React</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
